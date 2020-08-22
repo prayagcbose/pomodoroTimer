@@ -1,0 +1,151 @@
+.heading {
+	color: #ff4d00;
+	backface-visibility: hidden;
+	animation: moveinLeft 1s;
+	animation-timing-function: ease-in;
+}
+.Base {
+	border-radius: 50%;
+	height: 60vh;
+	width: 60vh;
+	position: relative;
+	background-color: black;
+	border: solid #ff0000 1.5px;
+}
+
+.Base::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 56vh;
+	height: 56vh;
+	background-color: #443737;
+	z-index: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+.Hand {
+	position: absolute;
+	height: 30%;
+	width: 0.2rem;
+
+	left: 50%;
+	top: 50%;
+	/* transform: translate(-50%, -100%) rotate(40deg); */
+	transform-origin: bottom;
+	background-color: white;
+	border: solid #ff0000 0.5px;
+	border-radius: 3px;
+	backface-visibility: hidden;
+	animation: rotateIn 1s;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+}
+
+.SecondHand {
+	height: 40%;
+	width: 0.2rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/* transform: translate(-50%, -100%) rotate(40deg); */
+	transform-origin: bottom;
+	background-color: white;
+	border: solid #ff0000 0.5px;
+	border-radius: 5px;
+	backface-visibility: hidden;
+	animation: rotateOut 1s;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+}
+
+.number {
+	font-size: 60%;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	padding: 3%;
+}
+
+.number15 {
+	transform: rotate(90deg);
+}
+.number30 {
+	transform: rotate(180deg);
+}
+.number45 {
+	transform: rotate(270deg);
+}
+.number0 {
+}
+
+.number15 .test {
+	transform: rotate(-90deg);
+}
+
+.number30 .test {
+	transform: rotate(-180deg);
+}
+.number45 .test {
+	transform: rotate(-270deg);
+}
+
+.centerCircle {
+	position: absolute;
+	height: 5%;
+	width: 5%;
+	background-color: black;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	border-radius: 50%;
+	border: solid #ff0000 1px;
+}
+
+@keyframes moveinLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	80% {
+		transform: translateX(10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes rotateIn {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, -100%) rotate(180deg);
+		transform-origin: bottom;
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(-50%, -100%) rotate(0deg);
+		transform-origin: bottom;
+	}
+}
+
+@keyframes rotateOut {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, -100%) rotate(-180deg);
+		transform-origin: bottom;
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(-50%, -100%) rotate(0deg);
+		transform-origin: bottom;
+	}
+}

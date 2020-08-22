@@ -1,0 +1,22 @@
+.button {
+	justify-content: center;
+	background-color: #443737;
+	width: fit-content;
+	padding: 0.3rem 1.5rem;
+	border: solid #ff0000 1px;
+	border-radius: 5px;
+
+	font-weight: 900;
+}
+
+.small {
+	font-size: 1.2rem;
+	color: #ff4d00;
+	margin: 1rem;
+	display: inline-flex;
+}
+
+.big {
+	font-size: 2rem;
+	color: white;
+}
