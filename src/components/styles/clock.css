@@ -6,8 +6,8 @@
 }
 .Base {
 	border-radius: 50%;
-	height: 60vh;
-	width: 60vh;
+	height: 58vh;
+	width: 58vh;
 	position: relative;
 	background-color: black;
 	border: solid #ff0000 1.5px;
@@ -17,8 +17,8 @@
 	content: "";
 	position: absolute;
 	display: block;
-	width: 56vh;
-	height: 56vh;
+	width: 54vh;
+	height: 54vh;
 	background-color: #443737;
 	z-index: 0;
 	top: 50%;

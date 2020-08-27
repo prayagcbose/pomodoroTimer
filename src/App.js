@@ -9,6 +9,9 @@ function App() {
 		<div className="App">
 			<header className="App-header">
 				<Main></Main>
+				<h3 style={{ opacity: ".4", fontSize: "1rem" }}>
+					Developed by Prayag C Bose
+				</h3>
 			</header>
 		</div>
 	);
