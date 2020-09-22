@@ -5,6 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Link to web page
 https://protimer.netlify.app/
 
+<a href="https://imgflip.com/gif/4fuzr7">via Imgflip</a>
+
 ## Available Scripts
 
 In the project directory, you can run:
