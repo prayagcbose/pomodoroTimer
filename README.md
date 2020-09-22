@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Link to web page
 https://protimer.netlify.app/
 
-<a href="https://imgflip.com/gif/4fuzr7">via Imgflip</a>
+![Hnet-image](https://user-images.githubusercontent.com/47104455/93892726-79039680-fd0a-11ea-8983-ab18f6e21f9f.gif)
 
 ## Available Scripts
 
